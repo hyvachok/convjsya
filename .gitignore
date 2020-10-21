@@ -1,3 +1,8 @@
+bin/
+.idea/
+.vscode/
+*.iml
+
 # Binaries for programs and plugins
 *.exe
 *.exe~
@@ -13,3 +18,14 @@
 
 # Dependency directories (remove the comment below to include it)
 # vendor/
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.*.sw[op]
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
