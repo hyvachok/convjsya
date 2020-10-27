@@ -24,7 +24,7 @@ func parse() (Options, error) {
 		*input = os.Args[1]
 	}
 	stat, _ := os.Stdin.Stat()
-	if (stat.Mode() & os.ModeCharDevice) == 0 { // whether piped mode or console output is used
+	if (stat.Mode()&os.ModeCharDevice) == 0 && len(os.Args) <= 1 { // whether piped mode or console output is used
 		piped = true
 	}
 	if *input == "" && len(os.Args) <= 1 && !piped {
